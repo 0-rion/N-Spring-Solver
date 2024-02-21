@@ -20,7 +20,7 @@ This numerical solver contains two c++ files
   This file calls the n_spring_solver.h header and read the input file to configure the class NSpring. It then compute the neccesary value and create an output file.
 
 ## Input and Output
-### Input
+### Input File
 The input file to the solver is a .txt file with space separated values. The file should be name as _parameters.txt_. 
 
 The first line should contain: 
@@ -35,4 +35,9 @@ Each subsequent line should describe one mass in the system, containing:
 - its mass $m_i$
 - initial displacement from its equilibrium position $x_i(0)$
 - initial velocity $\dot x_i(0)$
+
+A sample input file is provided [here](https://github.com/0-rion/N-Spring-Solver/blob/main/parameters.txt)
+
+### Output File
+The solver output a file called _output.txt_ to the directory of the solver. The output file is a space separated file containg the displacement and velocity of each mass at each time steo. Each line of the _output.txt_ contains the displacement and velocity of N masses a single time step in the format: $t$ &emsp; $x_1(t)$ &emsp; $\dot x_1(t)$ &emsp; . . . &emsp; $x_N (t$) &emsp; $\dot x_N(t)$.
 
