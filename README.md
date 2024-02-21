@@ -39,5 +39,5 @@ Each subsequent line should describe one mass in the system, containing:
 A sample input file is provided [here](https://github.com/0-rion/N-Spring-Solver/blob/main/parameters.txt)
 
 ### Output File
-The solver output a file called _output.txt_ to the directory of the solver. The output file is a space separated file containg the displacement and velocity of each mass at each time steo. Each line of the _output.txt_ contains the displacement and velocity of N masses a single time step in the format: $t$ &emsp; $x_1(t)$ &emsp; $\dot x_1(t)$ &emsp; . . . &emsp; $x_N (t$) &emsp; $\dot x_N(t)$.
+The solver output a file called _output.txt_ to the directory of the solver. The output file is a space separated file containg the displacement and velocity of each mass at each time step. Each line of the _output.txt_ contains the displacement and velocity of N masses a single time step in the format: $t$ &emsp; $x_1(t)$ &emsp; $\dot x_1(t)$ &emsp; . . . &emsp; $x_N (t$) &emsp; $\dot x_N(t)$.
 
