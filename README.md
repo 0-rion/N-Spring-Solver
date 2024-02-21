@@ -7,3 +7,5 @@ This solver user explicit Euler and 4th-order Runge-Kutta to numerically solve a
 
 ## System of Interest 
 The spring mass damper system of interest in shown below
+ 
+![image text](https://cloud.githubusercontent.com/assets/711743/25648417/57cd2c0c-2fe9-11e7-8753-b60ea2656faf.png)
