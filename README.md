@@ -9,8 +9,8 @@ This solver user explicit Euler and 4th-order Runge-Kutta to numerically solve a
 ## System of Interest 
 
 The spring mass damper system of interest in shown below
-![System_of_Interest](https://github.com/0-rion/N-Spring-Solver/assets/92618256/1b2b620c-3a83-4ebc-944b-83086176bde9)
-In this system, each mass is connected to two other masses via spring, except for the ones at the end where they are connected to the wall. The damper of each mass is connected to a fixed wall. The mass $m$, spring constant $k$ and damping constant $d$ can take distinct values for each mass.
+![System_of_Interest](https://github.com/0-rion/N-Spring-Solver/assets/92618256/20167886-2539-4923-8560-5087868c2f2a)
+In this system, each mass is connected to two other masses via spring, except for the ones at the end where they are connected to the wall. The damper of each mass is connected to a fixed wall. The mass $m$ can take distinct values for each mass, while spring constant $k$ and damping constant $c$ are the same through out the system.
 
 ## Code Structure
 This numerical solver contains two c++ files 
@@ -21,9 +21,18 @@ This numerical solver contains two c++ files
 
 ## Input and Output
 ### Input
-The input file to the solver is a .txt file with space separated values. The first line should contain: 
+The input file to the solver is a .txt file with space separated values. The file should be name as _parameters.txt_. 
+
+The first line should contain: 
 - an integer indicating the time integration scheme to use (0 = explicit Euler, 1 = 4th-order Runge-Kutta)
-- T, the total time to solve the over
-- ∆t, the time step size
-- k, the spring constant
-- d, the damping constant
+- $T$, the total time to solve the over
+- $∆t$, the time step size
+- $k$, the spring constant
+- $d$, the damping constant
+where each value should be separated by a white space. 
+
+Each subsequent line should describe one mass in the system, containing:
+- its mass $m_i$
+- initial displacement from its equilibrium position $x_i(0)$
+- initial velocity $\dot x_i(0)$
+
